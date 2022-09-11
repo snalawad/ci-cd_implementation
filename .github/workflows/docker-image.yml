@@ -19,9 +19,9 @@ jobs:
         DOCKER_USER: ${{secrets.DOCKER_USERNAME}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       run:
-        docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD        
+        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD --password-stdin       
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     
     - name: Puch Image to Docker Hub
-      run: docker push ${{secrets.DOCKER_USERNAME}}/ridecell_assignment
+      run: docker push ${{secrets.DOCKER_USER}}/ridecell_assignment
