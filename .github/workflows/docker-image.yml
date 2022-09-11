@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     
     - name: Puch Image to Docker Hub
-      run: docker push ${{secrets.DOCKER_USER}}/ridecell_assignment
+      run: docker push ${{secrets.DOCKER_USERNAME}}/ridecell_assignment
