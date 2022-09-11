@@ -21,7 +21,7 @@ jobs:
       run:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag guestbook_go:$(date +%s)
+      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/ridecell_assignment:$(date +%s)
     
     - name: Puch Image to Docker Hub
-      run: docker push nalawadesuyash/ridecell_assignment
+      run: docker push ${{secrets.DOCKER_USER}}/ridecell_assignment
