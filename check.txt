@@ -1,2 +1,5 @@
 Github Action Check
 
+Added BUILD_CONTAINER_IMAGE condition
+
+
