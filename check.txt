@@ -1,5 +1,8 @@
-Github Action Check
+Github Action Check { Docker Image CI #17: Commit a06f4b7 pushed by snalawad }
 
-Added BUILD_CONTAINER_IMAGE condition
+Added BUILD_CONTAINER_IMAGE condition  {Docker Image CI #19: Commit 0661bfc pushed by snalawad}
 
-check commit without specified message
+check commit without specified message - Succeded (Github Skipped the build)
+ {Docker Image CI #20: Commit a001ea5 pushed by snalawad}
+
+Final commit 
