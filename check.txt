@@ -2,4 +2,4 @@ Github Action Check
 
 Added BUILD_CONTAINER_IMAGE condition
 
-
+check commit without specified message
