@@ -34,3 +34,5 @@ clean:
 	docker rm -f ${REGISTRY}/guestbook:${VERSION} 2> /dev/null || true
 
 .PHONY: release clean build push
+
+# Comment
